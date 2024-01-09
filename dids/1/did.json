@@ -1,0 +1,26 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:msterle.github.io:dids:1",
+  "verificationMethod": [
+    {
+      "id": "did:web:msterle.github.io:dids:1#owner",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:localhost%3A8123:dids:1",
+      "publicKeyJwk": {
+        "kty": "EC",
+        "crv": "secp256k1",
+        "x": "nJWphpPAx3f511DdmnTVM7UJonTz5tRV/1RYt8/cV6o=",
+        "y": "0cHEEvtn6/sh05y3vOXQuKmgVLZrVZDYoeMuvAj820Y="
+      }
+    }
+  ],
+  "authentication": [
+    "did:web:msterle.github.io:dids:1#owner"
+  ],
+  "assertionMethod": [
+    "did:web:msterle.github.io:dids:1:1#owner"
+  ]
+}
