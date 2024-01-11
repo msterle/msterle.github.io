@@ -21,14 +21,14 @@
     "did:web:msterle.github.io:dids:1#owner"
   ],
   "assertionMethod": [
-    "did:web:msterle.github.io:dids:1:1#owner"
+    "did:web:msterle.github.io:dids:1#owner"
   ],
   "service": [{
     "id": "did:web:msterle.github.io:dids:1#did-communication",
     "type": "did-communication",
     "priority" : 0,
-    "recipientKeys" : [ "did:web:msterle.github.io:dids:1#0" ],
-    "routingKeys" : [ "did:web:msterle.github.io:dids:1#0" ],
+    "recipientKeys" : [ "did:web:msterle.github.io:dids:1#owner" ],
+    "routingKeys" : [ "did:web:msterle.github.io:dids:1#owner" ],
     "accept": [
       "didcomm/aip2;env=rfc587",
       "didcomm/aip2;env=rfc19"
