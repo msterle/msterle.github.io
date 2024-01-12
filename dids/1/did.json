@@ -26,8 +26,8 @@
     "id": "did:web:msterle.github.io:dids:1#did-communication",
     "type": "did-communication",
     "priority" : 0,
-    "recipientKeys" : [],
-    "routingKeys" : [],
+    "recipientKeys" : [ "did:web:msterle.github.io:dids:1#owner" ],
+    "routingKeys" : [ "did:web:msterle.github.io:dids:1#owner" ],
     "accept": [
       "didcomm/aip1"
     ],
