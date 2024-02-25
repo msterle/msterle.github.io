@@ -8,7 +8,7 @@
     {
       "id": "did:web:msterle.github.io:dids:alice-tmp#owner",
       "type": "JsonWebKey2020",
-      "controller": "did:web:localhost%3A8123:dids:alice-tmp",
+      "controller": "did:web:msterle.github.io:dids:alice-tmp",
       "publicKeyJwk": {
         "kty": "OKP",
         "crv": "Ed25519",
