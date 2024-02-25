@@ -27,6 +27,6 @@
     "accept": [
       "didcomm/aip1"
     ],
-    "serviceEndpoint": "http://localhost:3000"
+    "serviceEndpoint": "http://alice:5002"
   }]
 }

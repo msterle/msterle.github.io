@@ -27,6 +27,6 @@
     "accept": [
       "didcomm/aip1"
     ],
-    "serviceEndpoint": "http://localhost:3002"
+    "serviceEndpoint": "http://charlie:5002"
   }]
 }
