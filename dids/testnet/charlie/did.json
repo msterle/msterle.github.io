@@ -27,6 +27,6 @@
     "accept": [
       "didcomm/aip1"
     ],
-    "serviceEndpoint": "http://charlie:5002"
+    "serviceEndpoint": "http://nice-agent-issuer-veritable:5002"
   }]
 }
