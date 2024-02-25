@@ -3,12 +3,12 @@
     "https://www.w3.org/ns/did/v1",
     "https://w3id.org/security/suites/jws-2020/v1"
   ],
-  "id": "did:web:msterle.github.io:dids:alice-tmp",
+  "id": "did:web:msterle.github.io:dids:alice",
   "verificationMethod": [
     {
-      "id": "did:web:msterle.github.io:dids:alice-tmp#owner",
+      "id": "did:web:msterle.github.io:dids:alice#owner",
       "type": "JsonWebKey2020",
-      "controller": "did:web:msterle.github.io:dids:alice-tmp",
+      "controller": "did:web:msterle.github.io:dids:alice",
       "publicKeyJwk": {
         "kty": "OKP",
         "crv": "Ed25519",
@@ -16,13 +16,13 @@
       }
     }
   ],
-  "authentication": ["did:web:msterle.github.io:dids:alice-tmp#owner"],
-  "assertionMethod": ["did:web:msterle.github.io:dids:alice-tmp#owner"],
+  "authentication": ["did:web:msterle.github.io:dids:alice#owner"],
+  "assertionMethod": ["did:web:msterle.github.io:dids:alice#owner"],
   "service": [{
-    "id": "did:web:msterle.github.io:dids:alice-tmp#did-communication",
+    "id": "did:web:msterle.github.io:dids:alice#did-communication",
     "type": "did-communication",
     "priority" : 0,
-    "recipientKeys" : [ "did:web:msterle.github.io:dids:alice-tmp#owner" ],
+    "recipientKeys" : [ "did:web:msterle.github.io:dids:alice#owner" ],
     "routingKeys" : [],
     "accept": [
       "didcomm/aip1"
