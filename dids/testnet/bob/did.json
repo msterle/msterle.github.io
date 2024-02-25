@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:msterle.github.io:dids:testnet:bob",
+  "verificationMethod": [
+    {
+      "id": "did:web:msterle.github.io:dids:testnet:bob#owner",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:msterle.github.io:dids:testnet:bob",
+      "publicKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "bCVuxWhJ01M2_BidAlp0DDrcBa2ni8bzmxKQ_wxZQf8"
+      }
+    }
+  ],
+  "authentication": ["did:web:msterle.github.io:dids:testnet:bob#owner"],
+  "assertionMethod": ["did:web:msterle.github.io:dids:testnet:bob#owner"],
+  "service": [{
+    "id": "did:web:msterle.github.io:dids:testnet:bob#did-communication",
+    "type": "did-communication",
+    "priority" : 0,
+    "recipientKeys" : [ "did:web:msterle.github.io:dids:testnet:bob#owner" ],
+    "routingKeys" : [],
+    "accept": [
+      "didcomm/aip1"
+    ],
+    "serviceEndpoint": "http://localhost:3001"
+  }]
+}
