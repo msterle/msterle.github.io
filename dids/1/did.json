@@ -10,9 +10,9 @@
       "type": "JsonWebKey2020",
       "controller": "did:web:localhost%3A8123:dids:1",
       "publicKeyJwk": {
-          "kty": "OKP",
-          "crv": "Ed25519",
-          "x": "vcJ3K9TsOngRM_LBStiltiaj3ZKj0lkzUhOuqpe0yh0"
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "4zqlEVbhq9zShjGlLfGKSRt9pdUBKETvl9YYeuEgWng"
       }
     }
   ],
