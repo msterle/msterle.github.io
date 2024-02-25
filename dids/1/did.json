@@ -27,6 +27,6 @@
     "accept": [
       "didcomm/aip1"
     ],
-    "serviceEndpoint": "http://nice-agent-alice-veritable:3000"
+    "serviceEndpoint": "http://nice-agent-alice-veritable:5002"
   }]
 }
