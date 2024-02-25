@@ -27,6 +27,6 @@
     "accept": [
       "didcomm/aip1"
     ],
-    "serviceEndpoint": "http://localhost:5002"
+    "serviceEndpoint": "http://host.docker.internal:5002"
   }]
 }
