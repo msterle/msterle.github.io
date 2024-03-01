@@ -12,7 +12,7 @@
       "publicKeyJwk": {
         "kty": "OKP",
         "crv": "Ed25519",
-        "x": "5oPPdVHJyKnuXM2YWkMxGbrZvaap4OuMxxVZm7OZ0oI"
+        "x": "3zUuy4Qm7_3_RXXqVVri8PqHRrF0jZeNfzn2EYBjM3g"
       }
     }
   ],
@@ -27,6 +27,6 @@
     "accept": [
       "didcomm/aip1"
     ],
-    "serviceEndpoint": "http://nice-agent-alice-veritable:5002"
+    "serviceEndpoint": "http://alice:5002"
   }]
 }

@@ -12,7 +12,7 @@
       "publicKeyJwk": {
         "kty": "OKP",
         "crv": "Ed25519",
-        "x": "bCVuxWhJ01M2_BidAlp0DDrcBa2ni8bzmxKQ_wxZQf8"
+        "x": "zEfiJi43G3iHXaMjF3yxs2ZZ0n-HTaRLWh3WjPTnHFo"
       }
     }
   ],
@@ -27,6 +27,6 @@
     "accept": [
       "didcomm/aip1"
     ],
-    "serviceEndpoint": "http://nice-agent-bob-veritable:5002"
+    "serviceEndpoint": "http://bob:5002"
   }]
 }
