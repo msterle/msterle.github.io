@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:msterle.github.io:dids:nice-portal-test:alice",
+  "verificationMethod": [
+    {
+      "id": "did:web:msterle.github.io:dids:nice-portal-test:alice#owner",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:msterle.github.io:dids:nice-portal-test:alice",
+      "publicKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "VXw2OyE2X2TGqMc7tacs7TohEzyEhRzA_8vZlT1J0AU"
+      }
+    }
+  ],
+  "authentication": ["did:web:msterle.github.io:dids:nice-portal-test:alice#owner"],
+  "assertionMethod": ["did:web:msterle.github.io:dids:nice-portal-test:alice#owner"],
+  "service": [{
+    "id": "did:web:msterle.github.io:dids:nice-portal-test:alice#did-communication",
+    "type": "did-communication",
+    "priority" : 0,
+    "recipientKeys" : [ "did:web:msterle.github.io:dids:nice-portal-test:alice#owner" ],
+    "routingKeys" : [],
+    "accept": [
+      "didcomm/aip1"
+    ],
+    "serviceEndpoint": "http://nice-agent-alice-veritable:5002"
+  }]
+}

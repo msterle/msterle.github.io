@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:msterle.github.io:dids:nice-portal-test:bob",
+  "verificationMethod": [
+    {
+      "id": "did:web:msterle.github.io:dids:nice-portal-test:bob#owner",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:msterle.github.io:dids:nice-portal-test:bob",
+      "publicKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "f0ddLGonQ0Ie3Yew7SlIX93WWTZcfHld6emeyH5sTbo"
+      }
+    }
+  ],
+  "authentication": ["did:web:msterle.github.io:dids:nice-portal-test:bob#owner"],
+  "assertionMethod": ["did:web:msterle.github.io:dids:nice-portal-test:bob#owner"],
+  "service": [{
+    "id": "did:web:msterle.github.io:dids:nice-portal-test:bob#did-communication",
+    "type": "did-communication",
+    "priority" : 0,
+    "recipientKeys" : [ "did:web:msterle.github.io:dids:nice-portal-test:bob#owner" ],
+    "routingKeys" : [],
+    "accept": [
+      "didcomm/aip1"
+    ],
+    "serviceEndpoint": "http://nice-agent-bob-veritable:5002"
+  }]
+}

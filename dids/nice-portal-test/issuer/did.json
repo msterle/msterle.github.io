@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:msterle.github.io:dids:nice-portal-test:issuer",
+  "verificationMethod": [
+    {
+      "id": "did:web:msterle.github.io:dids:nice-portal-test:issuer#owner",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:msterle.github.io:dids:nice-portal-test:issuer",
+      "publicKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "xvrTU3f3lfldo6Rdt2ZH88SjCII6xJrKS3q9Fv12tzc"
+      }
+    }
+  ],
+  "authentication": ["did:web:msterle.github.io:dids:nice-portal-test:issuer#owner"],
+  "assertionMethod": ["did:web:msterle.github.io:dids:nice-portal-test:issuer#owner"],
+  "service": [{
+    "id": "did:web:msterle.github.io:dids:nice-portal-test:issuer#did-communication",
+    "type": "did-communication",
+    "priority" : 0,
+    "recipientKeys" : [ "did:web:msterle.github.io:dids:nice-portal-test:issuer#owner" ],
+    "routingKeys" : [],
+    "accept": [
+      "didcomm/aip1"
+    ],
+    "serviceEndpoint": "http://nice-agent-issuer-veritable:5002"
+  }]
+}
