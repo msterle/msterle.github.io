@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:msterle.github.io:dids:testnet:charlie",
+  "verificationMethod": [
+    {
+      "id": "did:web:msterle.github.io:dids:testnet:charlie#owner",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:msterle.github.io:dids:testnet:charlie",
+      "publicKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "8LZk9TjpZGB20fIzyz1l4lxYA5ALsdqfVNAWohov9SI"
+      }
+    }
+  ],
+  "authentication": ["did:web:msterle.github.io:dids:testnet:charlie#owner"],
+  "assertionMethod": ["did:web:msterle.github.io:dids:testnet:charlie#owner"],
+  "service": [{
+    "id": "did:web:msterle.github.io:dids:testnet:charlie#did-communication",
+    "type": "did-communication",
+    "priority" : 0,
+    "recipientKeys" : [ "did:web:msterle.github.io:dids:testnet:charlie#owner" ],
+    "routingKeys" : [],
+    "accept": [
+      "didcomm/aip1"
+    ],
+    "serviceEndpoint": "http://charlie:5002"
+  }]
+}
